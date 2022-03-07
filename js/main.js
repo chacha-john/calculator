@@ -1,11 +1,24 @@
 let userInput = document.querySelector("#userdata")
-let gender = userInput.gender.value
-let jina = userInput.username.value
+
+//names arrays
+male = ['Kwasi','Kwadwo','Kwabena','KwaKu','Yaw','Kofi','Kwame']
+female = ['Akosua','Adwoa','Abena','Akua','Yaa','Afua','Ama']
 
 
 userInput.addEventListener("submit", (e)=>{
     e.preventDefault()
     
+    
+    validate()
+    
+})
+validate = () =>{
+    //instantiates the gender
+    let gender = userInput.gender.value
+
+    //instantiates the name of the user
+    let jina = userInput.username.value
+
     //uses date object to get the date for input by the user
     let daya = userInput.dateofbirth.value
 
@@ -16,23 +29,13 @@ userInput.addEventListener("submit", (e)=>{
     siku = d.getDay()
     // mwezi = d.getMonth()
     // mwaka = d.getFullYear()
-    
-})
-validate = () =>{
+
     if(gender == 'male'){
-        maleLogic()
+        document.getElementsByClassName("collect-input").style.display = "none"
+        document.getElementById("akan-name").textContent = "Hi there, " + jina + "! Your Akan Name is " + male[siku] + "!";
     }
     else if(gender == 'female'){
-        femaleLogic()
+        document.getElementById("akan-name").textContent = "Hi there, " + jina + "! Your Akan Name is " + female[siku] + "!";
     }
-    
-
-}
-maleLogic = () =>{
-    names = ['kwasi','kwadwo','kwabena','kwaku','yaw','kofi','kwame']
-
-}
-femaleLogic = () =>{
-    names = ['akosua','adwoa','abena','akua','yaa','afua','ama']
 
 }
