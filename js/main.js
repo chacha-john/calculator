@@ -1,12 +1,10 @@
 let userInput = document.querySelector("#userdata")
 let gender = userInput.gender.value
-let names = []
+let jina = userInput.username.value
 
 
 userInput.addEventListener("submit", (e)=>{
     e.preventDefault()
-
-    let name = userInput.username.value
     
     //uses date object to get the date for input by the user
     let daya = userInput.dateofbirth.value
@@ -22,10 +20,19 @@ userInput.addEventListener("submit", (e)=>{
 })
 validate = () =>{
     if(gender == 'male'){
-        names = ['kwasi','kwadwo','kwabena','kwaku','yaw','kofi','kwame']
+        maleLogic()
     }
     else if(gender == 'female'){
-        names = ['akosua','adwoa','abena','akua','yaa','afua','ama']
+        femaleLogic()
     }
     
+
+}
+maleLogic = () =>{
+    names = ['kwasi','kwadwo','kwabena','kwaku','yaw','kofi','kwame']
+
+}
+femaleLogic = () =>{
+    names = ['akosua','adwoa','abena','akua','yaa','afua','ama']
+
 }
