@@ -15,23 +15,23 @@ body{
     padding: 0;
 }
 .brand{
-    font-size: 48px;
+    font-size: 300%;
     width: 40%;
     padding: 0%;
     text-align: left;
 }
 .third{
-    width: 30%;
+    /* width: 100%; */
 }
 a.third{
     width: 40%;
-    margin-top: 2%;
+    margin-top: 4%;
     display: flex;
     justify-content: end;
 }
 a button, #generate{
     background-color: #DAC8FA;
-    width: 30%;
+    width: 50%;
     height: 50px;
     border-radius: 5px;
     font-weight: 800;
@@ -57,12 +57,17 @@ span{
     
 }
 footer .footer{
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: x-small;
+}
+header{
+    display: flex;
+    justify-content: center;
 }
 nav{
     display: flex;
     width: 100%;
+    position: relative;
 
 }
 #collect-input{
@@ -101,4 +106,14 @@ form{
 a{
     color: #DAC8FA;
     text-decoration: none !important;
+}
+#akan-name{
+    font-size: x-large;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #332F3B inset !important;
+    -webkit-text-fill-color: #DAC8FA !important;
 }
