@@ -1,11 +1,12 @@
 body{
     background-color: #332F3B;
     font-family: 'Roboto', sans-serif;
-    color: white;
-    /* padding: 5%; */
+    color: #DAC8FA;
     text-align: center;
     box-sizing: border-box;
     overflow-x: hidden;
+    height: 100vh;
+    overflow-y: hidden;
 }
 .icon{
     font-family: 'Italianno', cursive;
@@ -56,7 +57,7 @@ span{
     
 }
 footer .footer{
-    margin-top: 13%;
+    margin-top: 20%;
     font-size: x-small;
 }
 nav{
@@ -70,17 +71,17 @@ nav{
 }
 
 form{
-    width: 50%;
+    width: 40%;
     padding: 2%;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 10px black;
     text-align: left;
+    border-radius: 20px;
 }
 .here, .here:active, .here:focus{
     display: flex;
     justify-content: center;
-    padding-left: 2%;
-    color: white;
-    width: 50%;
+    color: #DAC8FA;
+    width: 100%;
     height: 30px;
     border: transparent;
     background-color: #332F3B;
@@ -98,5 +99,6 @@ form{
 
 }
 a{
+    color: #DAC8FA;
     text-decoration: none !important;
 }
