@@ -5,6 +5,7 @@ body{
     /* padding: 5%; */
     text-align: center;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .icon{
     font-family: 'Italianno', cursive;
@@ -14,25 +15,26 @@ body{
 }
 .brand{
     font-size: 48px;
-    width: 30%;
+    width: 40%;
     padding: 0%;
     text-align: left;
 }
 .third{
-    width: 60%;
+    width: 30%;
 }
 a.third{
     width: 40%;
     margin-top: 2%;
-    position: relative;
-    left: 25%;
+    display: flex;
+    justify-content: end;
 }
-a button{
+a button, #generate{
     background-color: #DAC8FA;
     width: 30%;
-    height: 60px;
+    height: 50px;
     border-radius: 5px;
     font-weight: 800;
+    font-size: 100%;
 }
 .description{
     font-family: 'Gotu', sans-serif;
@@ -62,6 +64,39 @@ nav{
     width: 100%;
 
 }
-    /* .collect-input{
-        display: none;
-    } */
+#collect-input{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 50%;
+    padding: 2%;
+    box-shadow: 5px 5px 5px black;
+    text-align: left;
+}
+.here, .here:active, .here:focus{
+    display: flex;
+    justify-content: center;
+    padding-left: 2%;
+    color: white;
+    width: 50%;
+    height: 30px;
+    border: transparent;
+    background-color: #332F3B;
+    border-bottom: 1px solid  #DAC8FA;
+    margin: 2% 0;
+    outline: none;
+    font-size: large;
+    text-align: end;
+    
+}
+#generate{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+a{
+    text-decoration: none !important;
+}
