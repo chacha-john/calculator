@@ -31,11 +31,17 @@ validate = () =>{
     // mwaka = d.getFullYear()
 
     if(gender == 'male'){
-        document.getElementsByClassName("collect-input").style.display = "none"
-        document.getElementById("akan-name").textContent = "Hi there, " + jina + "! Your Akan Name is " + male[siku] + "!";
+        userInput.addEventListener("submit",(e)=>{
+            document.getElementById("collect-input").style.display = "none"
+            document.getElementById("akan-name").textContent = "Hi there, " + jina + "! Your Akan Name is " + male[siku] + "!";
+        })
+        
     }
     else if(gender == 'female'){
-        document.getElementById("akan-name").textContent = "Hi there, " + jina + "! Your Akan Name is " + female[siku] + "!";
+        userInput.addEventListener("submit",(e)=>{
+            document.getElementById("collect-input").style.display = "none"
+            document.getElementById("akan-name").textContent = "Hi there, " + jina + "! Your Akan Name is " + female[siku] + "!";
+        })
     }
 
 }
