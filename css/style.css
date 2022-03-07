@@ -121,3 +121,19 @@ input:-webkit-autofill:active{
     display: flex;
     justify-content: center;
 }
+#fact{
+    color: #DAC8FA;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    
+}
+#funfact{
+    font-family: 'Italianno', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 300%;
+    /* box-shadow: 5px 5px 10px black; */
+    /* width: 60%; */
+}
