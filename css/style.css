@@ -1,0 +1,43 @@
+body{
+    background-color: #332F3B;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 5%;
+    text-align: center;
+}
+.icon{
+    font-family: 'Italianno', cursive;
+    font-size: 48px;;
+}
+.brand{
+    font-size: 36px;;
+}
+a button{
+    background-color: #DAC8FA;
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 800;
+}
+.description{
+    font-family: 'Gotu', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    left: 10%;
+
+}
+span{
+    display: block;
+}
+.controls{
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+}
+footer .footer{
+    margin-top: 13%;
+    font-size: x-small;
+}
