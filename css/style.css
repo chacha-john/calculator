@@ -131,3 +131,36 @@ input:-webkit-autofill:active{
     align-items: center;
     font-size: 300%;
 }
+@media screen and (max-width:500px) {
+    
+}
+@media screen and (max-width:500px) {
+
+    .brand{
+        font-size: 200%;
+        display: none;
+    }
+    .icon{
+        width: 40%;
+        margin-top: 1%;
+        font-weight: 900
+    }
+    a.third{
+        width: 60%;
+    }
+    a button, #generate{
+        width: 80%;
+    }
+    .description{
+        font-size: 20px;
+    }
+    /* #akan-name{
+        font-size: large;
+    } */
+    #funfact{
+        font-size: 200%;
+    }
+    form{
+        width: 80%;
+    }
+}
